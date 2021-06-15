@@ -1,0 +1,11 @@
+{
+"BOT": {
+"admin": "OwnerID",
+"token": "BotToken"
+},
+
+"SETTİNGS": {
+"log": "LogChannelsID",
+"url": "ServerURL"
+}
+}
