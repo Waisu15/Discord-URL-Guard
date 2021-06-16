@@ -20,7 +20,7 @@ client.on("guildUpdate", async (olds, news) => {
 
 if(olds.vanityURLCode ==! news.vanityURLCode) {
 let logs = await news.fetchAuditLogs({type: "GUILD_UPDATE"}).then(audit => audit.entries.first());
-let member = newGuild.member(newGuild.members.cache.get(logs.executor.id));
+let member = news.member(news.members.cache.get(logs.executor.id));
 if(member || member.id ==! config.BOT.admin || member.id ==! client.user.id) {
 
 let ch = client.channels.cache.get(config.SETTİNGS.log);
